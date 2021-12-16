@@ -9,6 +9,7 @@ public class MySQLConnectInsert {
 		
 		Connection con = null;
 		PreparedStatement ps = null;
+		Pass pass = new Pass();
 		
 		try {
 			// ①JDBCドライバの登録（インスタンス化）
@@ -17,11 +18,11 @@ public class MySQLConnectInsert {
 			// ②データベースへの接続
 			String url = "jdbc:mysql://localhost/user";
 			String user = "root";
-			String password = "";
+			String password = pass.getPass();
 			con = DriverManager.getConnection(url, user,password);
 			
 			// ③ステートメントオブジェクトの取得
-			String sql = "INSERT INTO user_list(name, age) VALUE('にゃんじろう', 1)";
+			String sql = "INSERT INTO user_list(name, age) VALUE('ルーク', 8)";
 			ps = con.prepareStatement(sql);
 			
 			// ④SQL操作
