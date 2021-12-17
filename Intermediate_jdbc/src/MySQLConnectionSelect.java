@@ -48,6 +48,9 @@ public class MySQLConnectionSelect {
 				if(ps != null) {
 					ps.close();
 				}
+				if(rs != null) {
+					rs.close();
+				}
 			} catch(Exception e) {
 				e.printStackTrace();
 			}
