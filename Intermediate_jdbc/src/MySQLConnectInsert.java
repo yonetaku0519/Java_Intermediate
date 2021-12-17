@@ -22,7 +22,7 @@ public class MySQLConnectInsert {
 			con = DriverManager.getConnection(url, user,password);
 			
 			// ③ステートメントオブジェクトの取得
-			String sql = "INSERT INTO user_list(name, age) VALUE('ルーク', 8)";
+			String sql = "INSERT INTO user_list(name, age) VALUE('テストデータ', 30)";
 			ps = con.prepareStatement(sql);
 			
 			// ④SQL操作
