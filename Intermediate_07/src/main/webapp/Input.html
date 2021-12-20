@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Input</title>
+</head>
+<body>
+	<h1>ユーザー管理</h1>
+	<h2>ユーザー登録</h2>
+	<p>氏名と年齢を入力してください</p>
+	<form action="OutputServlet" method="post">
+		氏名：<input type="text" name="name"><br/>
+		年齢：<input type="text" name="age"><br/>
+		<input type="submit" name="送信" value="新規登録"><br/>
+	</form>
+	
+	<h2>登録ユーザーの表示</h2>
+	<form action="OutputServlet" method="get">
+		<input type="submit" name="表示" value="表示"><br/>
+	</form>
+
+</body>
+</html>
